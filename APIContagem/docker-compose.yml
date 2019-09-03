@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  apicontagem-env-variable:
+    image: apicontagem-env
+    build:
+      context: .
+    environment:
+      - TesteAmbiente=ContainerMaquinaRenato
+    ports:
+      - "15000:80"
